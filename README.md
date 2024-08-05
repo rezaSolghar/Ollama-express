@@ -1,15 +1,17 @@
-# phi3-test1
+This app using an open source small language model (Phi3:mini) provided by ollama to create random math question with 4 answers, base on the exact subject of math that come in the URL as parameter. 
 
-To install dependencies:
 
-```bash
-bun install
-```
+1- installing ollama in localhost : https://ollama.com/
 
-To run:
+2- pull the phi3:mini into the ollama: ollama pull phi3:mini
 
-```bash
-bun run app.ts
-```
 
-This project was created using `bun init` in bun v1.0.29. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+3- list of all math subjects: http://localhost:4000/RandomMathProblemCreator
+this api returns a list of subjects.
+
+
+4- create a random question of a subject : http://localhost:4000/RandomMathProblemCreator/Algebra
+this api provide the parsed question and answers.
+
+
+
